@@ -1,4 +1,11 @@
 package com.teachmeskills.task_2.abstractFigure;
 
-public class Figure {
+public abstract class Figure {
+    public abstract double getArea();
+    public abstract double getPerimeter();
+
+    @Override
+    public String toString() {
+        return "Figure Area = " + getArea() + ", Perimeter = " + getPerimeter();
+    }
 }
